@@ -1,20 +1,12 @@
-"use strict";
 (self["webpackChunkwebpack_starter"] = self["webpackChunkwebpack_starter"] || []).push([["bundle"],{
 
 /***/ "./src/generateJoke.js":
 /*!*****************************!*\
   !*** ./src/generateJoke.js ***!
   \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-var generateJoke = function generateJoke() {
-  return "I don't trust stairs. \n They're always up to something";
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (generateJoke);
+
 
 /***/ }),
 
@@ -24,12 +16,14 @@ var generateJoke = function generateJoke() {
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _generateJoke__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./generateJoke */ "./src/generateJoke.js");
+/* harmony import */ var _generateJoke__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_generateJoke__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/main.scss */ "./src/styles/main.scss");
 
 
-console.log((0,_generateJoke__WEBPACK_IMPORTED_MODULE_0__["default"])());
+console.log(_generateJoke__WEBPACK_IMPORTED_MODULE_0___default()());
 
 /***/ }),
 
@@ -39,6 +33,7 @@ console.log((0,_generateJoke__WEBPACK_IMPORTED_MODULE_0__["default"])());
   \***********************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -127,6 +122,7 @@ img {
   \*****************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /*
@@ -221,6 +217,7 @@ module.exports = function (cssWithMappingToString) {
   \************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 module.exports = function (item) {
@@ -246,6 +243,7 @@ module.exports = function (item) {
   \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -300,6 +298,7 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
   \****************************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 var stylesInDOM = [];
@@ -393,6 +392,7 @@ module.exports = function (list, options) {
   \********************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 var memo = {};
@@ -436,6 +436,7 @@ module.exports = insertBySelector;
   \**********************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -455,6 +456,7 @@ module.exports = insertStyleElement;
   \**********************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -474,6 +476,7 @@ module.exports = setAttributesWithoutAttributes;
   \***************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -544,6 +547,7 @@ module.exports = domAPI;
   \*********************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -567,4 +571,4 @@ module.exports = styleTagTransform;
 /******/ var __webpack_exports__ = (__webpack_exec__("./src/index.js"));
 /******/ }
 ]);
-//# sourceMappingURL=bundle3d5ae4e0f75d11d94338.js.map
+//# sourceMappingURL=bundle0be9f2fd43a2ea7d096d.js.map
