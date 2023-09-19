@@ -49,7 +49,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Sakura Sushi & Izakaya",
+      title: "Sakura Sushi",
       filename: "index.html",
       template: "src/template.html",
     }),
