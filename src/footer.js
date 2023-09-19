@@ -1,10 +1,10 @@
 import icon from "./assets/github-mark.svg";
 
 const makeFooter = () => {
-  const footer = document.querySelector("footer");
-  const text = document.querySelector("p");
+  const footer = document.createElement("footer");
+  const text = document.createElement("p");
   text.textContent = "Copyright © 2023 Berget";
-  const link = document.querySelector("a");
+  const link = document.createElement("a");
   link.href = "https://github.com/Berget1411";
   const img = document.createElement("img");
   img.src = icon;
