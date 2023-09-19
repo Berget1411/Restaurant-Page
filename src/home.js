@@ -4,7 +4,6 @@ const makeHome = () => {
   const homeContainer = document.createElement("section");
   homeContainer.classList.add("home-container");
   const home = document.createElement("div");
-  home.classList.add("home");
   const title = document.createElement("h2");
   title.textContent = "Best Sushi in Sweden";
   const subtitle = document.createElement("h3");
