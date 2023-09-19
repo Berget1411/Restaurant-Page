@@ -1,8 +1,10 @@
 import image from "./assets/cute_sushi.jpeg";
 
 const makeHome = () => {
-  const container = document.createElement("section");
-  container.classList.add("home");
+  const homeContainer = document.createElement("section");
+  homeContainer.classList.add("home-container");
+  const home = document.createElement("div");
+  home.classList.add("home");
   const title = document.createElement("h2");
   title.textContent = "Best Sushi in Sweden";
   const subtitle = document.createElement("h3");
@@ -13,9 +15,10 @@ const makeHome = () => {
   const thirdTitle = document.createElement("h3");
   thirdTitle.textContent = "Order online or visit us!";
 
-  container.append(title, subtitle, img, thirdTitle);
+  home.append(title, subtitle, img, thirdTitle);
+  homeContainer.append(home);
 
-  return container;
+  return homeContainer;
 };
 
 export default makeHome;
