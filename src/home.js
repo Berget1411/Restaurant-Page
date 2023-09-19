@@ -7,7 +7,7 @@ const makeHome = () => {
   const title = document.createElement("h2");
   title.textContent = "Best Sushi in Sweden";
   const subtitle = document.createElement("h3");
-  subtitle.textContent = "Deliciously Prepared Daily Since 1923";
+  subtitle.textContent = "Deliciously prepared daily since 1923";
   const img = document.createElement("img");
   img.src = image;
 
