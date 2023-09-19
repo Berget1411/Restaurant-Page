@@ -5,7 +5,7 @@ const content = document.querySelector(".content");
 const makeHeader = () => {
   let header = document.createElement("header");
   let h1 = document.createElement("h1");
-  h1.textContent = "Sakura Sushi & Izakaya";
+  h1.textContent = "Sakura Sushi";
 
   let nav = document.createElement("nav");
   let ul = document.createElement("ul");
