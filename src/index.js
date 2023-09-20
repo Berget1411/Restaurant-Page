@@ -1,10 +1,12 @@
 import "./styles/main.scss";
 import makeHome from "./home";
+import makeMenu from "./menu";
 import icon from "./assets/github-mark.svg";
 
 const content = document.querySelector(".content");
 
 const home = makeHome();
+const menu = makeMenu();
 
 const makeHeader = () => {
   let header = document.createElement("header");
@@ -22,6 +24,7 @@ const makeHeader = () => {
         home.classList.remove("not-active");
       } else if (e.target.textContent == "Menu") {
         home.classList.add("not-active");
+        menu.classList.remove("not-active");
       } else {
         home.classList.add("not-active");
       }
