@@ -102,7 +102,7 @@ header {
 .home-container {
   display: grid;
   justify-items: center;
-  gap: 20px;
+  gap: 10px;
   padding: 50px 175px;
   background-color: rgba(0, 0, 0, 0.6);
   border: 2px solid var(--secondary-color);
@@ -213,6 +213,7 @@ footer {
 
   font-size: 1.2em;
   background-color: rgba(0, 0, 0, 0.6);
+  border-top: 2px solid var(--main-color);
 
   img {
     margin-top: 6px;

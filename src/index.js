@@ -18,6 +18,7 @@ const makeHeader = () => {
   let nav = document.createElement("nav");
   let ul = document.createElement("ul");
   let listItems = ["Home", "Menu", "Contact"];
+  const counter = 0;
   for (const item of listItems) {
     let li = document.createElement("li");
     li.textContent = item;
