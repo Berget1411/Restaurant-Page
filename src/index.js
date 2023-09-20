@@ -57,6 +57,6 @@ const makeFooter = () => {
 const container = document.createElement("section");
 container.classList.add("container");
 
-container.append(home);
+container.append(home, menu);
 
 content.append(makeHeader(), container, makeFooter());
