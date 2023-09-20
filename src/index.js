@@ -1,12 +1,14 @@
 import "./styles/main.scss";
 import makeHome from "./home";
 import makeMenu from "./menu";
+import makeContact from "./Contact";
 import icon from "./assets/github-mark.svg";
 
 const content = document.querySelector(".content");
 
 const home = makeHome();
 const menu = makeMenu();
+const contact = makeContact();
 
 const makeHeader = () => {
   let header = document.createElement("header");
@@ -23,11 +25,15 @@ const makeHeader = () => {
       if (e.target.textContent == "Home") {
         home.classList.remove("not-active");
         menu.classList.add("not-active");
+        contact.classList.add("not-active");
       } else if (e.target.textContent == "Menu") {
         home.classList.add("not-active");
         menu.classList.remove("not-active");
+        contact.classList.add("not-active");
       } else {
         home.classList.add("not-active");
+        menu.classList.add("not-active");
+        contact.classList.remove("not-active");
       }
     });
 
@@ -58,6 +64,6 @@ const makeFooter = () => {
 const container = document.createElement("section");
 container.classList.add("container");
 
-container.append(home, menu);
+container.append(home, menu, contact);
 
 content.append(makeHeader(), container, makeFooter());

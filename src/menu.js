@@ -48,6 +48,7 @@ const makeMenu = () => {
 
   const menu = document.createElement("div");
   menu.classList.add("menu-container", "not-active");
+  const menuTitle = document.createElement("h2");
 
   for (const dish of dishes) {
     const newDish = document.createElement("div");
