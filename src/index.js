@@ -42,6 +42,9 @@ const makeHeader = () => {
   for (const item of listItems) {
     let li = document.createElement("li");
     li.textContent = item;
+    if (item == "Home") {
+      li.classList.add("active-color");
+    }
     li.setAttribute("id", `nav${counter}`);
     li.addEventListener("click", (e) => {
       if (e.target.textContent == "Home") {
