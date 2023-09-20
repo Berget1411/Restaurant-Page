@@ -5,4 +5,9 @@ import makeFooter from "./footer";
 
 const content = document.querySelector(".content");
 
-content.append(makeHeader(), makeHome(), makeFooter());
+const container = document.createElement("section");
+container.classList.add("container");
+
+container.append(makeHome());
+
+content.append(makeHeader(), container, makeFooter());

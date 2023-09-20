@@ -86,7 +86,11 @@ header {
   }
 }
 
-.home-container {
+.not-active {
+  display: none;
+}
+
+.container {
   display: grid;
   justify-content: center;
 
