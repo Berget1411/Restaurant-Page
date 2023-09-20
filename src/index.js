@@ -4,6 +4,8 @@ import icon from "./assets/github-mark.svg";
 
 const content = document.querySelector(".content");
 
+const home = makeHome();
+
 const makeHeader = () => {
   let header = document.createElement("header");
   let h1 = document.createElement("h1");
@@ -15,6 +17,15 @@ const makeHeader = () => {
   for (const item of listItems) {
     let li = document.createElement("li");
     li.textContent = item;
+    li.addEventListener("click", (e) => {
+      if (e.target.textContent == "Home") {
+        home.classList.remove("not-active");
+      } else if (e.target.textContent == "Menu") {
+        home.classList.add("not-active");
+      } else {
+        home.classList.add("not-active");
+      }
+    });
 
     ul.append(li);
   }
@@ -40,11 +51,9 @@ const makeFooter = () => {
   return footer;
 };
 
-export default makeFooter;
-
 const container = document.createElement("section");
 container.classList.add("container");
 
-container.append(makeHome());
+container.append(home);
 
 content.append(makeHeader(), container, makeFooter());
