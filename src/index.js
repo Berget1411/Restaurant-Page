@@ -5,7 +5,8 @@ import makeContact from "./Contact";
 import icon from "./assets/github-mark.svg";
 
 const content = document.querySelector(".content");
-
+const container = document.createElement("section");
+container.classList.add("container");
 const home = makeHome();
 const menu = makeMenu();
 const contact = makeContact();
@@ -87,9 +88,6 @@ const makeFooter = () => {
 
   return footer;
 };
-
-const container = document.createElement("section");
-container.classList.add("container");
 
 container.append(home, menu, contact);
 
