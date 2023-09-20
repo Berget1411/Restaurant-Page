@@ -48,10 +48,10 @@ const makeMenu = () => {
 
   const menu = document.createElement("div");
   menu.classList.add("menu", "not-active");
-  const newDish = document.createElement("div");
-  newDish.classList.add("dish");
 
   for (const dish of dishes) {
+    const newDish = document.createElement("div");
+    newDish.classList.add("dish");
     for (const [key, value] of Object.entries(dish)) {
       if (key == "imgSrc") {
         const img = document.createElement("img");
