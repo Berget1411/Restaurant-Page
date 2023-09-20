@@ -2,6 +2,7 @@ import image from "./assets/cute_sushi.jpeg";
 
 const makeHome = () => {
   const home = document.createElement("div");
+  home.classList.add("home-container");
 
   const title = document.createElement("h2");
   title.textContent = "Best Sushi in Stockholm";

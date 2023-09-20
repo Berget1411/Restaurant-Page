@@ -22,6 +22,7 @@ const makeHeader = () => {
     li.addEventListener("click", (e) => {
       if (e.target.textContent == "Home") {
         home.classList.remove("not-active");
+        menu.classList.add("not-active");
       } else if (e.target.textContent == "Menu") {
         home.classList.add("not-active");
         menu.classList.remove("not-active");

@@ -47,7 +47,7 @@ const makeMenu = () => {
   ];
 
   const menu = document.createElement("div");
-  menu.classList.add("menu", "not-active");
+  menu.classList.add("menu-container", "not-active");
 
   for (const dish of dishes) {
     const newDish = document.createElement("div");
