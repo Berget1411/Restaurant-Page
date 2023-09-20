@@ -11,17 +11,17 @@ const makeContact = () => {
   const number = document.createElement("p");
   number.textContent = "+46 12 345 67 89";
   const email = document.createElement("p");
-  number.textContent = "sakurasushi@gmail.com";
+  email.textContent = "sakurasushi@gmail.com";
   contact.append(contactTitle, number, email);
 
   const location = document.createElement("div");
   location.classList.add("location");
   const locationTitle = document.createElement("h2");
   locationTitle.textContent = "Where to find us";
-  const address = document.createElement("div");
+  const address = document.createElement("p");
   address.textContent = "Sankt Paulsgatan 2, 118 46 Stockholm";
   const openeningHours = document.createElement("p");
-  openeningHours.textContent = "10 - 22";
+  openeningHours.textContent = "We are open 10 - 22 everyday!";
   const locationImage = document.createElement("img");
   locationImage.src = imgSrc;
 
